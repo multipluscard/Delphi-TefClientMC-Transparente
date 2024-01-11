@@ -12,7 +12,9 @@
 
 Implementação em **Delphi**, com o objetivo de auxiliar no processo de integração da Automação Comercial com DLL TefClientMC (Layout transparente) responsável pela comunicação com a Solução de TEF, responsável por realizar transações de crédito, débito, serviços e outros. \
 <b>Utilize o Guia Técnico sempre como referência</b>, onde todas as funções e parâmetros estão descritos com detalhes. \
-Para obter a versão mais recente da DLL baixe através do Portal do Representante na sessão Downloads.
+Para obter a versão mais recente da DLL baixe através do Portal do Representante na sessão Downloads. 
+
+<b>Observação:</b> O projeto foi desenvolvido na IDE versão 10.4. Se você estiver utilizando uma versão anterior, pode ser necessário efetuar ajustes para garantir a compilação adequada do projeto.
 
 <hr>
 
