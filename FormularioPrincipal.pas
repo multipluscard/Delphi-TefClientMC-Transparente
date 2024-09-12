@@ -182,7 +182,7 @@ begin
     Reset(Arqsrc);
 {$I+}
     if (IOResult <> 0) then
-      ShowMessage('N„o conseguiu ler')
+      ShowMessage('N√£o conseguiu ler')
     else
     begin
 
@@ -210,7 +210,7 @@ begin
     CloseFile(Arqsrc);
 
   except
-    ShowMessage('Erro na atribuiÁ„o dos dados do arquivo .txt');
+    ShowMessage('Erro na atribui√ß√£o dos dados do arquivo .txt');
   end;
 
 end;
@@ -219,23 +219,23 @@ function TFormPrincipal.RetornaErro: Boolean;
 begin
   if Retorno = 1 then
   begin
-    ShowMessage('Erro genÈrico na execuÁ„o');
+    ShowMessage('Erro gen√©rico na execu√ß√£o');
   end;
   if Retorno = 30 then
   begin
-    ShowMessage('N„o foi encontrado o caminho do ClientD.exe');
+    ShowMessage('N√£o foi encontrado o caminho do ClientD.exe');
   end;
   if Retorno = 31 then
   begin
-    ShowMessage('ConfigMC.ini est· vazio');
+    ShowMessage('ConfigMC.ini est√° vazio');
   end;
   if Retorno = 32 then
   begin
-    ShowMessage('ClientD.exe n„o encontrado');
+    ShowMessage('ClientD.exe n√£o encontrado');
   end;
   if Retorno = 33 then
   begin
-    ShowMessage('ClientD.exe n„o est· em execuÁ„o');
+    ShowMessage('ClientD.exe n√£o est√° em execu√ß√£o');
   end;
   if Retorno = 34 then
   begin
@@ -243,11 +243,11 @@ begin
   end;
   if Retorno = 35 then
   begin
-    ShowMessage('N„o foi possÌvel criar o arquivo de resposta');
+    ShowMessage('N√£o foi poss√≠vel criar o arquivo de resposta');
   end;
   if Retorno = 36 then
   begin
-    ShowMessage('Erro na manipulaÁ„o do arquivo de resposta');
+    ShowMessage('Erro na manipula√ß√£o do arquivo de resposta');
   end;
   if Retorno = 37 then
   begin
@@ -255,23 +255,23 @@ begin
   end;
   if Retorno = 38 then
   begin
-    ShowMessage('Valor da transaÁ„o com formato incorreto');
+    ShowMessage('Valor da transa√ß√£o com formato incorreto');
   end;
   if Retorno = 39 then
   begin
-    ShowMessage('Execut·vel de envio de transaÁıes n„o encontrado');
+    ShowMessage('Execut√°vel de envio de transa√ß√µes n√£o encontrado');
   end;
   if Retorno = 40 then
   begin
-    ShowMessage('CNPJ Inv·lido ou no formato incorreto');
+    ShowMessage('CNPJ Inv√°lido ou no formato incorreto');
   end;
   if Retorno = 41 then
   begin
-    ShowMessage('ClientD.exe est· em processo de atualizaÁ„o');
+    ShowMessage('ClientD.exe est√° em processo de atualiza√ß√£o');
   end;
   if Retorno = 42 then
   begin
-    ShowMessage('A automaÁ„o n„o est· sendo executada no modo administrador');
+    ShowMessage('A automa√ß√£o n√£o est√° sendo executada no modo administrador');
   end;
 end;
 
@@ -492,7 +492,7 @@ begin
           var
           auxCupom := strCupom + '-------------------------------' + sLineBreak
             + sLineBreak + strCupom;
-          nsuRet := String(arrMsg[6].Replace('CAMPO0133=', ''));
+          nsuRet := String(arrMsg[5].Replace('CAMPO0133=', ''));
 
         end;
 
@@ -567,7 +567,7 @@ begin
         if retFim = 0 then
         begin
           lbLog.Lines.Add(FormatDateTime('dd/MM/yyyy', mydata) +
-            ' - FIM DA TRANSA«√O');
+            ' - FIM DA TRANSA√á√ÉO');
         end
         else
         begin
@@ -683,7 +683,7 @@ begin
         PAnsiChar(AnsiString(codloja_A)), comunicacao, '');
 
       var
-      strings := ' - Retorno ConfirmaÁ„o/Desfazimento - (%d)';
+      strings := ' - Retorno Confirma√ß√£o/Desfazimento - (%d)';
       strings := strings + ' : (%d)';
       var
       strings2 := ' - (%d) (%s) (%d) (%s) (%s) (%s) (%s) (%s) (%s) (%d)';
@@ -734,7 +734,7 @@ begin
 
     transacoespendentes.Items.Clear;
     lbLog.Lines.Add(FormatDateTime('dd/MM/yyyy', mydata) +
-      ' - FIM DA TRANSA«√O');
+      ' - FIM DA TRANSA√á√ÉO');
     lbLog.Refresh;
     checkBoxMultiplosCartoes.Checked := False;
   end
@@ -778,7 +778,7 @@ begin
       PAnsiChar(AnsiString(codloja_A)), comunicacao, '');
 
     var
-    strings := ' - Retorno ConfirmaÁ„o/Desfazimento - (%d)';
+    strings := ' - Retorno Confirma√ß√£o/Desfazimento - (%d)';
     strings := strings + ' : (%d)';
     var
     strings2 := ' - (%d) (%s) (%d) (%s) (%s) (%s) (%s) (%s) (%s) (%d)';
@@ -804,7 +804,7 @@ begin
     if lstCupons.count = 0 then
     begin
       lbLog.Lines.Add(FormatDateTime('dd/MM/yyyy', mydata) +
-        '- FIM DA TRANSA«√O');
+        '- FIM DA TRANSA√á√ÉO');
       lbLog.Refresh;
       checkBoxMultiplosCartoes.Checked := False;
     end;
@@ -893,7 +893,7 @@ begin
         PAnsiChar(AnsiString(data_A)), PAnsiChar(AnsiString(pdv_A)),
         PAnsiChar(AnsiString(codloja_A)), comunicacao, '');
       var
-      strings := ' - Retorno ConfirmaÁ„o/Desfazimento - (%d)';
+      strings := ' - Retorno Confirma√ß√£o/Desfazimento - (%d)';
       strings := strings + ' : (%d)';
       var
       strings2 := ' - (%d) (%s) (%d) (%s) (%s) (%s) (%s) (%s) (%s) (%d)';
@@ -939,7 +939,7 @@ begin
 
     transacoespendentes.Items.Clear;
     lbLog.Lines.Add(FormatDateTime('dd/MM/yyyy', mydata) +
-      ' - FIM DA TRANSA«√O');
+      ' - FIM DA TRANSA√á√ÉO');
     lbLog.Refresh;
     checkBoxMultiplosCartoes.Checked := False;
   end
@@ -989,7 +989,7 @@ begin
       PAnsiChar(AnsiString(codloja_A)), comunicacao, '');
 
     var
-    strings := ' - Retorno ConfirmaÁ„o/Desfazimento - (%d)';
+    strings := ' - Retorno Confirma√ß√£o/Desfazimento - (%d)';
     strings := strings + ' : (%d)';
     var
     strings2 := ' - (%d) (%s) (%d) (%s) (%s) (%s) (%s) (%s) (%s) (%d)';
@@ -1012,7 +1012,7 @@ begin
     if lstCupons.count = 0 then
     begin
       lbLog.Lines.Add(FormatDateTime('dd/MM/yyyy', mydata) +
-        '- FIM DA TRANSA«√O');
+        '- FIM DA TRANSA√á√ÉO');
       checkBoxMultiplosCartoes.Checked := False;
     end;
 
@@ -1316,7 +1316,7 @@ begin
       begin
         var
         RecebeNovaVenda := Application.MessageBox
-          ('Deseja Pagar com mais de um cart„o', 'Pagar com Multiplos Cartıes',
+          ('Deseja Pagar com mais de um cart√£o', 'Pagar com Multiplos Cart√µes',
           MB_ICONQUESTION or MB_YESNO);
         if RecebeNovaVenda = IDYES then
         begin
